@@ -1,0 +1,42 @@
+@use 'main';
+$additionalColor: main.$additionalColor;
+
+header{
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background: #FFFFFF;
+  z-index: 30;
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+
+    &__element{
+      margin: 0 40px 0 0;
+    }
+
+    &__link{
+       text-decoration: none;
+       font-weight: 500;
+       font-size: 16px;
+       line-height: 32px;
+       color: $additionalColor;
+       transition: 0.3s;
+
+        &:hover{
+          color: #0066CC;
+          transition: 0.4s;
+        }
+    }
+
+    &__link.link-active{
+      color: #0066CC;
+    }
+}

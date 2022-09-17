@@ -1,0 +1,13 @@
+div {
+  color: #ffffff;
+}
+div h1 {
+  color: #fff111;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff12ff), to(#ff7f90));
+  background: -o-linear-gradient(#ff12ff, #ff7f90);
+  background: linear-gradient(#ff12ff, #ff7f90);
+}
+
+p {
+  color: red;
+}
